@@ -1,5 +1,3 @@
-/* eslint global-require: off, no-console: off, promise/always-return: off */
-
 /**
  * This module executes inside of electron's main process. You can start
  * electron renderer process from here and communicate with the other processes
@@ -8,6 +6,7 @@
  * When running `npm run build` or `npm run build:main`, this file is compiled to
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
+
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import path from 'path';
@@ -52,8 +51,8 @@ const installExtensions = async () => {
 
   return installer
     .default(
-      extensions.map((name) => installer[name]),
-      forceDownload
+      extensions.map(name => installer[name]),
+      forceDownload,
     )
     .catch(console.log);
 };
@@ -63,21 +62,30 @@ const createWindow = async () => {
     await installExtensions();
   }
 
-  const RESOURCES_PATH = app.isPackaged
-    ? path.join(process.resourcesPath, 'assets')
-    : path.join(__dirname, '../../assets');
+  const RESOURCES_PATH = app.isPackaged ?
+    path.join(process.resourcesPath, 'assets') :
+    path.join(__dirname, '../../assets');
 
   const getAssetPath = (...paths: string[]): string => {
     return path.join(RESOURCES_PATH, ...paths);
   };
 
   mainWindow = new BrowserWindow({
+    frame: true,
     show: false,
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true,
+      nodeIntegrationInWorker: true,
+      contextIsolation: true,
+      experimentalFeatures: true,
+      allowRunningInsecureContent: true,
+      defaultFontSize: 14,
+      defaultMonospaceFontSize: 14,
+      spellcheck: false,
     },
   });
 
