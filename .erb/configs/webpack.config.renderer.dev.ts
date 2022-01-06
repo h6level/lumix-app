@@ -5,6 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import chalk from 'chalk';
 import { merge } from 'webpack-merge';
 import { spawn, execSync } from 'child_process';
+import { say } from 'cfonts';
 
 import baseConfig from './webpack.config.base';
 import webpackPaths from './webpack.paths';
@@ -155,6 +156,13 @@ const configuration: webpack.Configuration = {
     },
     onBeforeSetupMiddleware() {
       console.log('Starting Main Process...');
+      say('Lumix-app', {
+        colors: ['magenta', 'blue'],
+        font: 'simple',
+        align: 'center',
+        gradient: true,
+        space: true,
+      });
       spawn('npm', ['run', 'start:main'], {
         shell: true,
         env: process.env,
