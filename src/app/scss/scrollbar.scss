@@ -1,0 +1,27 @@
+/* stylelint-disable */
+
+/* 滚动条整体样式 */
+::-webkit-scrollbar {
+  width: 8px; /* 高宽分别对应横竖滚动条的尺寸 */
+  height: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  // border-radius: 2px;
+}
+
+/* 滚动条里面小方块 */
+::-webkit-scrollbar-thumb {
+  // 参考 echarts 滚动条样式
+  background: rgba(50, 50, 50, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  // border-radius: 2px;
+}
+
+/* 滚动条里面轨道 */
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: rgba(50, 50, 50, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
