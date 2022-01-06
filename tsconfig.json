@@ -58,9 +58,5 @@
     "release/build",
     "release/app/dist",
     ".erb/dll",
-<<<<<<< HEAD
   ],
-=======
-  ]
->>>>>>> 8478dce9cabe1740962efd08ac2a5eb2fc4d0093
 }

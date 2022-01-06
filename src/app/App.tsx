@@ -3,7 +3,7 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import CoinPng from '@static/icon/coin.png';
 import RocketPng from '@static/image/rocket.png';
 import IconSvg from '@static/icon/icon.svg';
-import './App.css';
+import './App.scss';
 
 const Hello = () => {
   return (
