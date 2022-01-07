@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { observer } from 'mobx-react';
-import { Paper, Button } from '@mui/material';
+import { Paper, Button, Stack } from '@mui/material';
 import { styled } from '@mui/system';
 
 interface IProps {}
@@ -16,17 +16,16 @@ const Home = (props: IProps, state: IState) => {
 
   return (
     <Paper>
-      <p>Home Page</p>
-      <p>
+      <Stack>
         <Link to="/">
           <Button variant="contained" color="primary">Home Page</Button>
         </Link>
-      </p>
-      <p>
+      </Stack>
+      <Stack>
         <Link to="/setting">
           <Button variant="contained" color="secondary">Setting Page</Button>
         </Link>
-      </p>
+      </Stack>
     </Paper>
   );
 };
