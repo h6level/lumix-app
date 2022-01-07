@@ -1,0 +1,41 @@
+@import './color/index.scss';
+
+/**
+* {
+  font-family: 'Open Sans', system-ui, sans-serif;
+  box-sizing: border-box;
+  outline-width: 0;
+  outline-style: none;
+}
+*/
+
+html {
+  /* stylelint-disable-next-line */
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  background-color: $grey50;
+  touch-action: none;
+  /* -webkit-overflow-scrolling: touch; */
+  /* -webkit-user-select: none; */
+  /* -webkit-app-region: drag; */
+}
+
+::selection {
+  color: $grey50;
+  background-color: $redA400;
+}
