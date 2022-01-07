@@ -13,7 +13,6 @@ html {
   /* stylelint-disable-next-line */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,9 +29,6 @@ body {
   font-style: normal;
   background-color: $grey50;
   touch-action: none;
-  /* -webkit-overflow-scrolling: touch; */
-  /* -webkit-user-select: none; */
-  /* -webkit-app-region: drag; */
 }
 
 ::selection {
