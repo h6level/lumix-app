@@ -1,14 +1,13 @@
 @import './color/index.scss';
 @import './mixin.scss';
 
-/**
 * {
-  font-family: 'Open Sans', system-ui, sans-serif;
-  outline-width: 0;
-  outline-style: none;
+  /* font-family: 'Open Sans', system-ui, sans-serif; */
+  /* outline-width: 0; */
+  /* outline-style: none; */
+  @include font-family;
   box-sizing: border-box;
 }
-*/
 
 html {
   /* stylelint-disable-next-line */
