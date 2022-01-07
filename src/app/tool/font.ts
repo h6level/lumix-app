@@ -1,0 +1,27 @@
+const Font = {
+  size10: '10px',
+  size11: '11px',
+  size12: '12px',
+  size13: '13px',
+  size14: '14px',
+  size15: '15px',
+  size16: '16px',
+  size17: '17px',
+  size18: '18px',
+  size19: '19px',
+  size20: '20px',
+  size21: '21px',
+  size22: '22px',
+  size23: '23px',
+  size24: '24px',
+  size25: '25px',
+  size26: '26px',
+  size27: '27px',
+  size28: '28px',
+  size29: '29px',
+  size30: '30px',
+  size31: '31px',
+  size32: '32px',
+};
+
+export default Font;
