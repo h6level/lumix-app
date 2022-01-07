@@ -1,13 +1,15 @@
-import React from 'react';
+import '@scss/index.scss';
+import AppTheme from '@core/theme/index';
+import AppRoute from './app-route';
 
 interface IProps {}
 interface IState {}
 
 const AppRoot = (props: IProps, state: IState) => {
   return (
-    <section>
-      <p>Hello</p>
-    </section>
+    <AppTheme>
+      <AppRoute />
+    </AppTheme>
   );
 };
 

@@ -1,0 +1,28 @@
+@mixin font-family { font-family: 'Open Sans', system-ui, sans-serif; }
+
+@mixin relative { position: relative; }
+@mixin absolute { position: absolute; }
+@mixin fixed { position: fixed; }
+
+@mixin flex { display: flex; }
+@mixin inline-flex { display: inline-flex; }
+@mixin flex1 { flex: 1; }
+@mixin column { flex-direction: column; }
+
+@mixin hidden { visibility: hidden; }
+@mixin visible { visibility: visible; }
+
+@mixin flex-column {
+  @include flex;
+  @include column;
+}
+@mixin inline-flex-column {
+  @include inline-flex;
+  @include column;
+}
+
+@mixin w100 { width: 100%; }
+@mixin h100 { height: 100%; }
+
+@mixin margin0 { margin: 0; }
+@mixin padding0 { padding: 0; }

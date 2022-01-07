@@ -2,9 +2,9 @@ import Font from '@tool/font';
 import Style from '@tool/style';
 
 const muiTypography = {
-  htmlFontSize: Font.size16,
+  htmlFontSize: 16,
   fontFamily: Style.fontFamily,
-  fontSize: Font.size14,
+  fontSize: 14,
   body1: {
     letterSpacing: Style.spacing01,
     lineHeight: Style.lineHeight,
@@ -17,7 +17,7 @@ const muiTypography = {
   },
   button: {
     fontWeight: Style.weight500,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
     lineHeight: Style.lineHeight,
     fontSize: Font.size14,
     textTransform: 'none',
@@ -25,7 +25,7 @@ const muiTypography = {
   caption: {
     fontSize: Font.size14,
     fontWeight: Style.weight500,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
     lineHeight: Style.lineHeight,
   },
   overline: {
@@ -38,50 +38,50 @@ const muiTypography = {
   subtitle1: {
     fontSize: Font.size14,
     fontWeight: Style.weight500,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
     lineHeight: Style.lineHeight,
   },
   subtitle2: {
     fontSize: Font.size14,
     fontWeight: Style.weight500,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
     lineHeight: Style.lineHeight,
   },
   h6: {
     fontSize: Font.size18,
     fontWeight: Style.weight500,
     lineHeight: Style.lineHeight,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
   },
   h5: {
     fontSize: Font.size20,
     fontWeight: Style.weight500,
     lineHeight: Style.lineHeight,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
   },
   h4: {
     fontSize: Font.size22,
     fontWeight: Style.weight500,
     lineHeight: Style.lineHeight,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
   },
   h3: {
     fontSize: Font.size24,
     fontWeight: Style.weight500,
     lineHeight: Style.lineHeight,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
   },
   h2: {
     fontSize: Font.size28,
     fontWeight: Style.weight500,
     lineHeight: Style.lineHeight,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
   },
   h1: {
     fontSize: Font.size32,
     fontWeight: Style.weight500,
     lineHeight: Style.lineHeight,
-    letterSpacing: Style.spacing02,
+    letterSpacing: Style.spacing01,
   },
 };
 
