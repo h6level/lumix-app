@@ -1,5 +1,3 @@
-const Hello = {
-  city: '杭州',
-};
+import APaper from './paper';
 
-export default Hello;
+export { APaper };
