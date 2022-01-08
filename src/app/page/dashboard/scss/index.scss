@@ -1,0 +1,10 @@
+@import '@scss/color/index.scss';
+@import '@scss/mixin.scss';
+
+.dashboard {
+  b.head100 {
+    @include inline-flex;
+    @include flex1;
+    background-color: $deepOrangeA400;
+  }
+}

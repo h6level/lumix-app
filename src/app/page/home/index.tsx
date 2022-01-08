@@ -21,11 +21,6 @@ const Home = (props: IProps, state: IState) => {
           <Button variant="contained" color="primary">Home Page</Button>
         </Link>
       </Stack>
-      <Stack>
-        <Link to="/setting">
-          <Button variant="contained" color="secondary">Setting Page</Button>
-        </Link>
-      </Stack>
     </Paper>
   );
 };

@@ -1,3 +1,3 @@
-import APaper from './paper';
+import { FlexPaper, GridPaper } from './paper';
 
-export { APaper };
+export { FlexPaper, GridPaper };

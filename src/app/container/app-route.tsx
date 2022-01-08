@@ -1,8 +1,8 @@
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 
-import Dashboard from '@comp/dashboard/index';
-import Home from '@comp/home/index';
-import Setting from '@comp/setting/index';
+import Dashboard from '@page/dashboard/index';
+import Home from '@page/home/index';
+import Setting from '@page/setting/index';
 
 interface IProps {}
 interface IState {}
