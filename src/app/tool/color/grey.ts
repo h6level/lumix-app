@@ -13,6 +13,8 @@ const Grey = {
   greyA200: '#EEEEEE',
   greyA400: '#BDBDBD',
   greyA700: '#616161',
+  border: '#3C3836',
+  dark: '#1D2021',
 };
 
 export default Grey;

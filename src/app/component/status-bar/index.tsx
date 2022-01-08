@@ -4,17 +4,21 @@ import { observer } from 'mobx-react';
 import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
-import { Blue } from '@tool/color/index';
-import { APaper } from '@styled/index';
+import { Grey } from '@tool/color/index';
+import { FlexPaper } from '@styled/index';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(APaper)(() => ({
+const DPaper = styled(FlexPaper)(() => ({
   height: '20px',
-  backgroundColor: Blue.blue200,
+  borderTop: `1px solid ${Grey.border}`,
+  backgroundColor: Grey.dark,
 
-  '& i': { lineHeight: 1 },
+  '& i': {
+    lineHeight: 1,
+    color: Grey.grey50,
+  },
 }));
 
 const StatusBar = (props: IProps, state: IState) => {

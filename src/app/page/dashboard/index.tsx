@@ -5,7 +5,8 @@ import { Paper, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 
 import './scss/index.scss';
-import { FlexPaper, GridPaper, APaper } from '@styled/index';
+import { Grey } from '@tool/color/index';
+import { FlexPaper, GridPaper, APaper, GridBox, FlexBox } from '@styled/index';
 import AppBar from '@comp/app-bar/index';
 import StatusBar from '@comp/status-bar/index';
 
@@ -17,11 +18,13 @@ const DPaper = styled(GridPaper)(() => ({
   gridTemplateRows: '2px 1fr 20px',
 }));
 
-const DBox = styled(Box)(() => ({
+const CBox = styled(GridBox)(() => ({
   flex: 1,
-  width: '100%',
-  display: 'grid',
   gridTemplateColumns: '50px 1fr',
+}));
+
+const DBox = styled(FlexBox)(() => ({
+  backgroundColor: Grey.dark,
 }));
 
 const Dashboard = (props: IProps, state: IState) => {
@@ -34,14 +37,14 @@ const Dashboard = (props: IProps, state: IState) => {
   return (
     <DPaper className="dashboard">
       <p className="head100" />
-      <DBox>
+      <CBox>
         <AppBar />
-        <p>
+        <DBox>
           <Link to="/home">
-            <Button variant="contained" color="primary">Hello</Button>
+            <Button variant="contained" color="info">Hello</Button>
           </Link>
-        </p>
-      </DBox>
+        </DBox>
+      </CBox>
       <StatusBar />
     </DPaper>
   );
