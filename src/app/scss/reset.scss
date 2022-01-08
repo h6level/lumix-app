@@ -1,3 +1,15 @@
 @import './mixin.scss';
 
 a { text-decoration: none; }
+
+i { font-style: normal; }
+
+p {
+  @include margin0;
+  @include padding0;
+}
+
+div {
+  @include margin0;
+  @include padding0;
+}

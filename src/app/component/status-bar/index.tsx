@@ -4,10 +4,18 @@ import { observer } from 'mobx-react';
 import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
-import { FlexPaper } from '@styled/index';
+import { Blue } from '@tool/color/index';
+import { APaper } from '@styled/index';
 
 interface IProps {}
 interface IState {}
+
+const DPaper = styled(APaper)(() => ({
+  height: '20px',
+  backgroundColor: Blue.blue200,
+
+  '& i': { lineHeight: 1 },
+}));
 
 const StatusBar = (props: IProps, state: IState) => {
   const navi = useNavigate();
@@ -17,9 +25,9 @@ const StatusBar = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <FlexPaper>
-      <Button variant="contained" color="primary">Hello</Button>
-    </FlexPaper>
+    <DPaper>
+      <i>status bar</i>
+    </DPaper>
   );
 };
 

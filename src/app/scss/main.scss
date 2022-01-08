@@ -24,8 +24,8 @@ body {
   @include margin0;
   @include padding0;
   height: 100vh;
-  line-height: 1.5;
-  font-size: 1.4rem;
+  overflow: hidden;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   background-color: $grey100;

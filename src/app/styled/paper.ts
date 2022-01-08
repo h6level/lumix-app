@@ -4,7 +4,8 @@ import { styled } from '@mui/system';
 const APaper = styled(Paper)(() => ({
   position: 'relative',
   width: '100%',
-  flex: 1,
+  margin: 0,
+  padding: 0,
 }));
 
 const FlexPaper = styled(APaper)(() => ({
@@ -17,4 +18,4 @@ const GridPaper = styled(APaper)(() => ({
   display: 'grid',
 }));
 
-export { FlexPaper, GridPaper };
+export { FlexPaper, GridPaper, APaper };

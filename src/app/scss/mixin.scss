@@ -1,5 +1,7 @@
 @mixin font-family { font-family: 'Open Sans', system-ui, sans-serif; }
 
+@mixin border-box { box-sizing: border-box; }
+
 @mixin relative { position: relative; }
 @mixin absolute { position: absolute; }
 @mixin fixed { position: fixed; }

@@ -1,7 +1,7 @@
 @import './mixin.scss';
 
 #root {
-  @include flex1;
   @include w100;
-  @include flex-column;
+  @include flex1;
+  @include flex;
 }

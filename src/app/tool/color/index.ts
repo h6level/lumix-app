@@ -29,3 +29,7 @@ const Color = {
 };
 
 export default Color;
+export {
+  Amber, Blue, Brown, DeepOrange, Green, Grey, LightBlue, LightGreen,
+  Orange, Pink, Purple, Red, Yellow,
+};

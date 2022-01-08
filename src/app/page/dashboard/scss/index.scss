@@ -2,9 +2,10 @@
 @import '@scss/mixin.scss';
 
 .dashboard {
-  b.head100 {
-    @include inline-flex;
-    @include flex1;
+  .head100 {
+    @include flex;
+    @include w100;
+    height: 2px;
     background-color: $deepOrangeA400;
   }
 }

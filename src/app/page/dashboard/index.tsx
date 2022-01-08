@@ -1,17 +1,27 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { observer } from 'mobx-react';
-import { Paper, Button } from '@mui/material';
+import { Paper, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 
 import './scss/index.scss';
-import { GridPaper } from '@styled/index';
+import { FlexPaper, GridPaper, APaper } from '@styled/index';
+import AppBar from '@comp/app-bar/index';
+import StatusBar from '@comp/status-bar/index';
 
 interface IProps {}
 interface IState {}
 
 const DPaper = styled(GridPaper)(() => ({
-  gridTemplateRows: '2px 1fr 1fr',
+  flex: 1,
+  gridTemplateRows: '2px 1fr 20px',
+}));
+
+const DBox = styled(Box)(() => ({
+  flex: 1,
+  width: '100%',
+  display: 'grid',
+  gridTemplateColumns: '50px 1fr',
 }));
 
 const Dashboard = (props: IProps, state: IState) => {
@@ -23,12 +33,16 @@ const Dashboard = (props: IProps, state: IState) => {
 
   return (
     <DPaper className="dashboard">
-      <b className="head100" />
-      <p>
-        <Link to="/home">
-          <Button variant="contained" color="primary">Hello</Button>
-        </Link>
-      </p>
+      <p className="head100" />
+      <DBox>
+        <AppBar />
+        <p>
+          <Link to="/home">
+            <Button variant="contained" color="primary">Hello</Button>
+          </Link>
+        </p>
+      </DBox>
+      <StatusBar />
     </DPaper>
   );
 };
