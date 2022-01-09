@@ -2,7 +2,9 @@
 
 a { text-decoration: none; }
 
-i { font-style: normal; }
+i, em { font-style: normal; }
+
+b, strong { font-weight: 400; }
 
 div, section, p, header, footer,
 ul, ol, li, pre, article, address, aside,

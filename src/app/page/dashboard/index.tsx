@@ -9,19 +9,20 @@ import { Grey } from '@tool/color/index';
 import { FlexPaper, GridPaper, APaper, GridBox, FlexBox } from '@styled/index';
 import AppBar from '@comp/app-bar/index';
 import StatusBar from '@comp/status-bar/index';
+import RightBar from '@comp/right-bar/index';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(GridPaper)(() => ({
+const DPaper = styled(GridPaper)(({ theme }) => ({
   flex: 1,
-  gridTemplateRows: '2px 1fr 20px',
+  gridTemplateRows: `2px 1fr ${theme.spacing(2.5)}`,
 }));
 
-const CBox = styled(GridBox)(() => ({
+const CBox = styled(GridBox)(({ theme }) => ({
   flex: 1,
   overflow: 'hidden',
-  gridTemplateColumns: '50px 1fr',
+  gridTemplateColumns: `${theme.spacing(6)} 1fr ${theme.spacing(2)}`,
 }));
 
 const DBox = styled(FlexBox)(() => ({
@@ -53,6 +54,7 @@ const Dashboard = (props: IProps, state: IState) => {
 
           <Outlet />
         </DBox>
+        <RightBar />
       </CBox>
       <StatusBar />
     </DPaper>
