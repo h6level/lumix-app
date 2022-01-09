@@ -4,8 +4,12 @@ import { observer } from 'mobx-react';
 import { Paper, Button, Stack } from '@mui/material';
 import { styled } from '@mui/system';
 
+import { FlexColumnPaper } from '@styled/index';
+
 interface IProps {}
 interface IState {}
+
+const DPaper = styled(FlexColumnPaper)(() => ({}));
 
 const Home = (props: IProps, state: IState) => {
   const navi = useNavigate();
@@ -15,7 +19,7 @@ const Home = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <Paper>
+    <DPaper>
       <Stack>
         <Link to="/home">
           <Button variant="contained" color="primary">Home Page</Button>
@@ -24,7 +28,7 @@ const Home = (props: IProps, state: IState) => {
           <Button variant="contained" color="primary">Setting Page</Button>
         </Link>
       </Stack>
-    </Paper>
+    </DPaper>
   );
 };
 

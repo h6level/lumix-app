@@ -1,5 +1,5 @@
-import { grey } from '@mui/material/colors';
 import muiButton from './mui-button';
+import Style from '@tool/style';
 
 const muiComponents = {
   MuiButton: muiButton,
@@ -7,7 +7,7 @@ const muiComponents = {
     styleOverrides: {
       root: {
         boxShadow: 'none',
-        backgroundColor: grey[50],
+        backgroundColor: Style.transparent,
       },
     },
   },

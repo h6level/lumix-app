@@ -5,14 +5,12 @@ import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { Grey } from '@tool/color/index';
-import { FlexPaper } from '@styled/index';
+import { FlexColumnPaper } from '@styled/index';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(Paper)(() => ({
-  backgroundColor: Grey.dark,
-}));
+const DPaper = styled(FlexColumnPaper)(() => ({}));
 
 const Setting = (props: IProps, state: IState) => {
   const navi = useNavigate();

@@ -12,6 +12,7 @@ const Style = {
   spacing05: '5px',
 
   lineHeight: 1.5,
+  transparent: 'rgba(0, 0, 0, 0)',
 };
 
 export default Style;

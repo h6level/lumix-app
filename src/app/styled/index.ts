@@ -1,9 +1,9 @@
 import {
-  APaper, FlexPaper, GridPaper,
-  ABox, FlexBox, GridBox,
+  APaper, FlexPaper, GridPaper, FlexColumnPaper,
+  ABox, FlexBox, GridBox, FlexColumnBox,
 } from './paper';
 
 export {
-  APaper, FlexPaper, GridPaper,
-  ABox, FlexBox, GridBox,
+  APaper, FlexPaper, GridPaper, FlexColumnPaper,
+  ABox, FlexBox, GridBox, FlexColumnBox,
 };
