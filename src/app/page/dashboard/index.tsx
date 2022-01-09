@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, Outlet } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import { Paper, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
@@ -20,10 +20,13 @@ const DPaper = styled(GridPaper)(() => ({
 
 const CBox = styled(GridBox)(() => ({
   flex: 1,
+  overflow: 'hidden',
   gridTemplateColumns: '50px 1fr',
 }));
 
 const DBox = styled(FlexBox)(() => ({
+  flexDirection: 'column',
+  overflow: 'auto',
   backgroundColor: Grey.dark,
 }));
 
@@ -40,9 +43,15 @@ const Dashboard = (props: IProps, state: IState) => {
       <CBox>
         <AppBar />
         <DBox>
-          <Link to="/home">
-            <Button variant="contained" color="info">Hello</Button>
+          <Link to="home">
+            <Button variant="contained" color="info">Home</Button>
           </Link>
+          <Link to="setting">
+            <Button variant="contained" color="error">Setting Page</Button>
+          </Link>
+          <h1>上海</h1>
+
+          <Outlet />
         </DBox>
       </CBox>
       <StatusBar />

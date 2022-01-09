@@ -11,9 +11,10 @@ const AppRoute = (props: IProps, state: IState) => {
   return (
     <MemoryRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="setting" element={<Setting />} />
+        <Route path="/" element={<Dashboard />}>
+          <Route path="home" element={<Home />} />
+          <Route path="setting" element={<Setting />} />
+        </Route>
         <Route path="*" element={<Dashboard />} />
       </Routes>
     </MemoryRouter>

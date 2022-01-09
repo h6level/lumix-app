@@ -4,10 +4,15 @@ import { observer } from 'mobx-react';
 import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
+import { Grey } from '@tool/color/index';
 import { FlexPaper } from '@styled/index';
 
 interface IProps {}
 interface IState {}
+
+const DPaper = styled(Paper)(() => ({
+  backgroundColor: Grey.dark,
+}));
 
 const Setting = (props: IProps, state: IState) => {
   const navi = useNavigate();
@@ -17,9 +22,12 @@ const Setting = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <FlexPaper>
-      <Button variant="contained" color="primary">Hello</Button>
-    </FlexPaper>
+    <DPaper>
+      <Link to="/home">
+        <Button variant="contained" color="primary">Home Page</Button>
+      </Link>
+      <h1>Setting Page</h1>
+    </DPaper>
   );
 };
 

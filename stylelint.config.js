@@ -21,7 +21,7 @@ module.exports = {
     'declaration-bang-space-before': 'always',
     'selector-list-comma-space-after': 'always-single-line',
     'selector-list-comma-space-before': 'never',
-    'selector-list-comma-newline-after': 'always-multi-line',
+    // 'selector-list-comma-newline-after': 'always-multi-line',
     'selector-list-comma-newline-before': 'never-multi-line',
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
@@ -61,5 +61,6 @@ module.exports = {
     }],
     'color-function-notation': 'legacy',
     'no-descending-specificity': null,
+    'selector-list-comma-newline-after': null,
   },
 };

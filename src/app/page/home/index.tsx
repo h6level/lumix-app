@@ -17,8 +17,11 @@ const Home = (props: IProps, state: IState) => {
   return (
     <Paper>
       <Stack>
-        <Link to="/">
+        <Link to="/home">
           <Button variant="contained" color="primary">Home Page</Button>
+        </Link>
+        <Link to="/setting">
+          <Button variant="contained" color="primary">Setting Page</Button>
         </Link>
       </Stack>
     </Paper>

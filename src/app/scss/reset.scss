@@ -4,12 +4,10 @@ a { text-decoration: none; }
 
 i { font-style: normal; }
 
-p {
-  @include margin0;
-  @include padding0;
-}
-
-div {
+div, section, p, header, footer,
+ul, ol, li, pre, article, address, aside,
+span, i, b, a, big, small, em, strong,
+h1, h2, h3, h4, h5, h6 {
   @include margin0;
   @include padding0;
 }
