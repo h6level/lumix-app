@@ -1,5 +1,10 @@
-const Hello = {
-  city: '杭州',
+import { app } from 'electron';
+import 'path';
+
+const Util = {
+  closeWin: () => {
+    console.log('app -- ', app);
+  },
 };
 
-export default Hello;
+export default Util;

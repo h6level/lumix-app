@@ -5,11 +5,13 @@ import { Paper, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 
 import './scss/index.scss';
+// import Util from '@util/index';
 import { Grey } from '@tool/color/index';
 import { FlexPaper, GridPaper, APaper, GridBox, FlexBox } from '@styled/index';
 import AppBar from '@comp/app-bar/index';
 import StatusBar from '@comp/status-bar/index';
 import RightBar from '@comp/right-bar/index';
+import TopBar from '@comp/top-bar/index';
 
 interface IProps {}
 interface IState {}
@@ -38,12 +40,19 @@ const Dashboard = (props: IProps, state: IState) => {
     return () => {};
   }, []);
 
+  const closeWin = () => {
+    console.log('close window');
+    // Util.closeWin();
+  };
+
   return (
     <DPaper className="dashboard">
-      <p className="head100" />
+      <TopBar />
+
       <CBox>
         <AppBar />
         <DBox>
+          <Button variant="contained" color="success" onClick={closeWin}>Close Window</Button>
           <Link to="home">
             <Button variant="contained" color="info">Home</Button>
           </Link>

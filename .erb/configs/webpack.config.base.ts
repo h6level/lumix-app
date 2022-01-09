@@ -63,6 +63,17 @@ const configuration: webpack.Configuration = {
       '@type': webpackPaths.typePath,
       '@util': webpackPaths.utilPath,
     },
+    fallback: {
+      // "fs": false,
+      // "tls": false,
+      // "net": false,
+      // "path": require.resolve("path-browserify"),
+      // "zlib": false,
+      // "http": false,
+      // "https": false,
+      // "stream": false,
+      // "crypto": false,
+    },
   },
 
   plugins: [
