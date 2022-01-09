@@ -5,7 +5,6 @@ import { Paper, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 
 import './scss/index.scss';
-// import Util from '@util/index';
 import { Grey } from '@tool/color/index';
 import { FlexPaper, GridPaper, APaper, GridBox, FlexBox } from '@styled/index';
 import AppBar from '@comp/app-bar/index';
@@ -37,12 +36,12 @@ const Dashboard = (props: IProps, state: IState) => {
   const navi = useNavigate();
 
   useEffect(() => {
+
     return () => {};
   }, []);
 
   const closeWin = () => {
     console.log('close window');
-    // Util.closeWin();
   };
 
   return (
