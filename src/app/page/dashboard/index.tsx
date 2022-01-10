@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, Link, Outlet } from 'react-router-dom';
+import { useNavigate, Outlet } from 'react-router-dom';
 import { observer } from 'mobx-react';
-import { Paper, Button, Box } from '@mui/material';
+import { Paper } from '@mui/material';
 import { styled } from '@mui/system';
 
 import './scss/index.scss';
 import { Grey } from '@tool/color/index';
-import { FlexPaper, GridPaper, APaper, GridBox, FlexBox } from '@styled/index';
+import { GridPaper, GridBox, FlexBox } from '@styled/index';
 import AppBar from '@comp/app-bar/index';
 import StatusBar from '@comp/status-bar/index';
 import RightBar from '@comp/right-bar/index';
@@ -40,10 +40,6 @@ const Dashboard = (props: IProps, state: IState) => {
     return () => {};
   }, []);
 
-  const closeWin = () => {
-    console.log('close window');
-  };
-
   return (
     <DPaper className="dashboard">
       <TopBar />
@@ -51,19 +47,11 @@ const Dashboard = (props: IProps, state: IState) => {
       <CBox>
         <AppBar />
         <DBox>
-          <Button variant="contained" color="success" onClick={closeWin}>Close Window</Button>
-          <Link to="home">
-            <Button variant="contained" color="info">Home</Button>
-          </Link>
-          <Link to="setting">
-            <Button variant="contained" color="error">Setting Page</Button>
-          </Link>
-          <h1>上海</h1>
-
           <Outlet />
         </DBox>
         <RightBar />
       </CBox>
+
       <StatusBar />
     </DPaper>
   );

@@ -21,7 +21,7 @@ const Setting = (props: IProps, state: IState) => {
 
   return (
     <DPaper>
-      <Link to="/home">
+      <Link to="/">
         <Button variant="contained" color="primary">Home Page</Button>
       </Link>
       <h1>Setting Page</h1>

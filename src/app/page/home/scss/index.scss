@@ -1,0 +1,8 @@
+@import '@scss/color/index.scss';
+@import '@scss/mixin.scss';
+
+.home-page {
+  p {
+    color: $grey100;
+  }
+}
