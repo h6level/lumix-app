@@ -89,8 +89,8 @@ const muiButton = {
     },
     root: {
       '&.Mui-disabled': {
-        color: grey[400],
-        backgroundColor: grey[800],
+        color: grey[600],
+        backgroundColor: grey[400],
       },
     },
   },
