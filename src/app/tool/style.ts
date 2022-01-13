@@ -5,11 +5,11 @@ const Style = {
   weight500: 500,
   weight600: 600,
 
-  spacing01: '1px',
-  spacing02: '2px',
-  spacing03: '3px',
-  spacing04: '4px',
-  spacing05: '5px',
+  spacing01: '0.5px',
+  spacing02: '1px',
+  spacing03: '2px',
+  spacing04: '3px',
+  spacing05: '4px',
 
   lineHeight: 1.5,
   transparent: 'rgba(0, 0, 0, 0)',

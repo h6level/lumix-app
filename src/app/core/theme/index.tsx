@@ -6,7 +6,7 @@ import muiTypography from './mui-typography';
 import muiComponents from './mui-components';
 
 interface IProps {
-  children: ReactNode,
+  children: ReactNode;
 }
 interface IState {}
 

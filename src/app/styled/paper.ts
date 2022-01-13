@@ -17,29 +17,13 @@ const ABox = styled(Box)(() => ({
   boxSizing: 'border-box',
 }));
 
-const FlexPaper = styled(APaper)(() => ({
-  display: 'flex',
-}));
+const FlexPaper = styled(APaper)(() => ({ display: 'flex' }));
+const FlexColumnPaper = styled(FlexPaper)(() => ({ flexDirection: 'column' }));
+const GridPaper = styled(APaper)(() => ({ display: 'grid' }));
 
-const FlexColumnPaper = styled(FlexPaper)(() => ({
-  flexDirection: 'column',
-}));
-
-const GridPaper = styled(APaper)(() => ({
-  display: 'grid',
-}));
-
-const FlexBox = styled(ABox)(() => ({
-  display: 'flex',
-}));
-
-const FlexColumnBox = styled(FlexBox)(() => ({
-  flexDirection: 'column',
-}));
-
-const GridBox = styled(ABox)(() => ({
-  display: 'grid',
-}));
+const FlexBox = styled(ABox)(() => ({ display: 'flex' }));
+const FlexColumnBox = styled(FlexBox)(() => ({ flexDirection: 'column' }));
+const GridBox = styled(ABox)(() => ({ display: 'grid' }));
 
 export {
   APaper, FlexPaper, GridPaper, FlexColumnPaper,
