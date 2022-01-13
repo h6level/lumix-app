@@ -1,3 +1,5 @@
+@import './color-mixin.scss';
+
 @mixin font-family { font-family: 'Open Sans', system-ui, sans-serif; }
 
 @mixin border-box { box-sizing: border-box; }
@@ -29,4 +31,4 @@
 @mixin margin0 { margin: 0; }
 @mixin padding0 { padding: 0; }
 
-@mixin transparent { background-color: rgba(0, 0, 0, 0%); }
+@mixin transparent { @include black-bg(0); }
