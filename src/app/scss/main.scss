@@ -2,9 +2,6 @@
 @import './mixin.scss';
 
 * {
-  /* font-family: 'Open Sans', system-ui, sans-serif; */
-  /* outline-width: 0; */
-  /* outline-style: none; */
   @include font-family;
   box-sizing: border-box;
 }
@@ -23,13 +20,13 @@ body {
   @include flex;
   @include margin0;
   @include padding0;
+  @include size14;
   height: 100vh;
   overflow: hidden;
-  font-size: 14px;
   font-weight: 400;
-  font-style: normal;
-  background-color: $grey100;
   touch-action: none;
+  color: $grey900;
+  background-color: $grey100;
 }
 
 ::selection {

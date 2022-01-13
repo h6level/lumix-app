@@ -13,12 +13,6 @@ interface IState {}
 const DPaper = styled(FlexPaper)(() => ({
   height: '20px',
   borderTop: `1px solid ${Grey.border}`,
-  backgroundColor: Grey.dark,
-
-  '& i': {
-    lineHeight: 1,
-    color: Grey.grey50,
-  },
 }));
 
 const StatusBar = (props: IProps, state: IState) => {

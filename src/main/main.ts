@@ -75,6 +75,8 @@ const createWindow = async () => {
     show: false,
     width: 1024,
     height: 728,
+    minWidth: 390, // iPhone 12 Pro
+    minHeight: 844, // iPhone 12 Pro
     icon: getAssetPath('icon.png'),
     // titleBarStyle: 'hidden',
     webPreferences: {

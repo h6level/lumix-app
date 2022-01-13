@@ -89,8 +89,8 @@ const muiButton = {
     },
     root: {
       '&.Mui-disabled': {
-        color: grey[800],
-        backgroundColor: grey[500],
+        color: grey[400],
+        backgroundColor: grey[800],
       },
     },
   },
@@ -104,36 +104,42 @@ const muiButton = {
     {
       props: { variant: 'dashed', color: 'primary' },
       style: {
+        color: pink.A400,
         border: `1px dashed ${pink.A400}`,
       },
     },
     {
       props: { variant: 'dashed', color: 'secondary' },
       style: {
+        color: purple.A400,
         border: `1px dashed ${purple.A400}`,
       },
     },
     {
       props: { variant: 'dashed', color: 'success' },
       style: {
+        color: green[600],
         border: `1px dashed ${green[600]}`,
       },
     },
     {
       props: { variant: 'dashed', color: 'error' },
       style: {
+        color: red.A700,
         border: `1px dashed ${red.A700}`,
       },
     },
     {
       props: { variant: 'dashed', color: 'info' },
       style: {
+        color: blue.A400,
         border: `1px dashed ${blue.A400}`,
       },
     },
     {
       props: { variant: 'dashed', color: 'warning' },
       style: {
+        color: deepOrange.A400,
         border: `1px dashed ${deepOrange.A400}`,
       },
     },

@@ -1,4 +1,5 @@
-@import './color-mixin.scss';
+@import './mixin/color-mixin.scss';
+@import './mixin/size-mixin.scss';
 
 @mixin font-family { font-family: 'Open Sans', system-ui, sans-serif; }
 

@@ -29,7 +29,6 @@ const CBox = styled(GridBox)(({ theme }) => ({
 const DBox = styled(FlexBox)(() => ({
   flexDirection: 'column',
   overflow: 'auto',
-  backgroundColor: Grey.dark,
 }));
 
 const Dashboard = (props: IProps, state: IState) => {

@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { observer } from 'mobx-react';
-import { Paper, Button, Stack } from '@mui/material';
+import { Paper, Button, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { IoGlobeOutline } from 'react-icons/io5';
+import { isEmpty } from 'lodash';
 
 import './scss/index.scss';
 import { FlexColumnPaper } from '@styled/index';
@@ -11,7 +12,9 @@ import { FlexColumnPaper } from '@styled/index';
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(FlexColumnPaper)(() => ({}));
+const DPaper = styled(FlexColumnPaper)(({ theme }) => ({
+  padding: theme.spacing(1),
+}));
 
 const DStack = styled(Stack)(() => ({
   display: 'flex',
@@ -29,6 +32,9 @@ const Home = (props: IProps, state: IState) => {
   return (
     <DPaper className="home-page">
       <DStack>
+        <p>--- 华丽的分割线 ---</p>
+        <Typography variant="body1">上海，杭州，苏州</Typography>
+        <Typography variant="body2">南京，无锡，常州</Typography>
         <p>--- 华丽的分割线 contained ---</p>
         <Link to="/">
           <Button variant="contained" color="primary">Home Page</Button>

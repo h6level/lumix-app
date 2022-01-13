@@ -13,9 +13,6 @@ interface IState {}
 const DPaper = styled(FlexPaper)(() => ({
   flex: 1,
   borderRight: `1px solid ${Grey.border}`,
-  backgroundColor: Grey.dark,
-
-  '& i': { color: Grey.grey50 },
 }));
 
 const AppBar = (props: IProps, state: IState) => {

@@ -11,10 +11,8 @@ interface IProps {}
 interface IState {}
 
 const DPaper = styled(FlexColumnPaper)(() => ({
+  flex: 1,
   borderLeft: `1px solid ${Grey.border}`,
-  backgroundColor: Grey.dark,
-
-  '& b': { color: Grey.grey50 },
 }));
 
 const RightBar = (props: IProps, state: IState) => {

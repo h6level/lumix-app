@@ -2,9 +2,9 @@ import Font from '@tool/font';
 import Style from '@tool/style';
 
 const muiTypography = {
-  htmlFontSize: 16,
+  // htmlFontSize: 20,
+  // fontSize: 10,
   fontFamily: Style.fontFamily,
-  fontSize: 14,
   body1: {
     letterSpacing: Style.spacing01,
     lineHeight: Style.lineHeight,
