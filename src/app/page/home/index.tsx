@@ -42,8 +42,10 @@ const Home = (props: IProps, state: IState) => {
     <DPaper className="home-page">
       <DStack>
         <p>--- 华丽的分割线 ---</p>
-        <Typography variant="body1">上海，杭州，苏州</Typography>
-        <Typography variant="body2">南京，无锡，常州</Typography>
+        <Typography variant="h1"
+          className="animate__animated animate__bounceIn">
+          追求技术之巅，探索宇宙之秘...
+        </Typography>
         <p>--- 华丽的分割线 contained ---</p>
         <Link to="/">
           <Button variant="contained" color="primary">Home Page</Button>

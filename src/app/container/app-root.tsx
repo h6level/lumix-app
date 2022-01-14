@@ -1,3 +1,5 @@
+import 'animate.css';
+
 import '@scss/index.scss';
 import AppTheme from '@core/theme/index';
 import AppRoute from './app-route';

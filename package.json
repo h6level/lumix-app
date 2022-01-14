@@ -221,6 +221,8 @@
     "@mui/styles": "^5.2.3",
     "@mui/system": "^5.2.6",
     "@types/lodash": "^4.14.178",
+    "@types/ramda": "^0.27.63",
+    "animate.css": "^4.1.1",
     "cfonts": "^2.10.0",
     "chart.js": "^3.7.0",
     "d3": "^7.2.1",
