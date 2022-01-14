@@ -18,7 +18,7 @@ if (!fs.existsSync(mainPath)) {
 if (!fs.existsSync(rendererPath)) {
   throw new Error(
     chalk.whiteBright.bgRed.bold(
-      'The renderer process is not built yet. Build it by running "npm run build:renderer"'
+      'The renderer process is not built yet. Build it by running "npm run build:web"'
     )
   );
 }
