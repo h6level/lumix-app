@@ -11,6 +11,7 @@ import AppBar from '@comp/app-bar/index';
 import StatusBar from '@comp/status-bar/index';
 import RightBar from '@comp/right-bar/index';
 import TopBar from '@comp/top-bar/index';
+import AppLoading from '@con/app-loading';
 
 interface IProps {}
 interface IState {}
@@ -52,6 +53,8 @@ const Dashboard = (props: IProps, state: IState) => {
       </CBox>
 
       <StatusBar />
+
+      <AppLoading />
     </DPaper>
   );
 };

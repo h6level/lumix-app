@@ -1,16 +1,29 @@
-import { ReactNode } from 'react';
+import React from 'react';
 import { createPortal } from 'react-dom';
 
-interface IProps {
-  children: ReactNode;
-}
+import './scss/app-loading.scss';
+
+interface IProps {}
 interface IState {}
 
 const AppPortal = (props: IProps, state: IState) => {
-  const { children } = props;
-
   return createPortal(
-    <>{children}</>,
+    <section className="app-loading">
+      <section className="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </section>,
     document.getElementById('loading') as HTMLElement,
   );
 };

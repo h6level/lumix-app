@@ -41,10 +41,9 @@ const Home = (props: IProps, state: IState) => {
   return (
     <DPaper className="home-page">
       <DStack>
-        <p>--- 华丽的分割线 ---</p>
         <Typography variant="h1"
           className="animate__animated animate__bounceIn">
-          追求技术之巅，探索宇宙之秘...
+          我愿化为一道光，穿越银河去旅行...
         </Typography>
         <p>--- 华丽的分割线 contained ---</p>
         <Link to="/">

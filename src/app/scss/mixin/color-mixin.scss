@@ -1,55 +1,23 @@
-@mixin primary-color($opacity) {
-  color: rgba(245, 0, 87, $opacity);
-}
-@mixin primary-bg($opacity) {
-  background-color: rgba(245, 0, 87, $opacity);
-}
+@mixin primary-color($opacity) { color: rgba(245, 0, 87, $opacity); }
+@mixin primary-bg($opacity) { background-color: rgba(245, 0, 87, $opacity); }
 
-@mixin secondary-color($opacity) {
-  color: rgba(213, 0, 249, $opacity);
-}
-@mixin secondary-bg($opacity) {
-  background-color: rgba(213, 0, 249, $opacity);
-}
+@mixin secondary-color($opacity) { color: rgba(213, 0, 249, $opacity); }
+@mixin secondary-bg($opacity) { background-color: rgba(213, 0, 249, $opacity); }
 
-@mixin success-color($opacity) {
-  color: rgba(67, 160, 71, $opacity);
-}
-@mixin success-bg($opacity) {
-  background-color: rgba(67, 160, 71, $opacity);
-}
+@mixin success-color($opacity) { color: rgba(67, 160, 71, $opacity); }
+@mixin success-bg($opacity) { background-color: rgba(67, 160, 71, $opacity); }
 
-@mixin error-color($opacity) {
-  color: rgba(213, 0, 0, $opacity);
-}
-@mixin error-bg($opacity) {
-  background-color: rgba(213, 0, 0, $opacity);
-}
+@mixin error-color($opacity) { color: rgba(213, 0, 0, $opacity); }
+@mixin error-bg($opacity) { background-color: rgba(213, 0, 0, $opacity); }
 
-@mixin info-color($opacity) {
-  color: rgba(41, 121, 255, $opacity);
-}
-@mixin info-bg($opacity) {
-  background-color: rgba(41, 121, 255, $opacity);
-}
+@mixin info-color($opacity) { color: rgba(41, 121, 255, $opacity); }
+@mixin info-bg($opacity) { background-color: rgba(41, 121, 255, $opacity); }
 
-@mixin warning-color($opacity) {
-  color: rgba(255, 61, 0, $opacity);
-}
-@mixin warning-bg($opacity) {
-  background-color: rgba(255, 61, 0, $opacity);
-}
+@mixin warning-color($opacity) { color: rgba(255, 61, 0, $opacity); }
+@mixin warning-bg($opacity) { background-color: rgba(255, 61, 0, $opacity); }
 
-@mixin black-color($opacity) {
-  color: rgba(0, 0, 0, $opacity);
-}
-@mixin black-bg($opacity) {
-  background-color: rgba(0, 0, 0, $opacity);
-}
+@mixin black-color($opacity) { color: rgba(0, 0, 0, $opacity); }
+@mixin black-bg($opacity) { background-color: rgba(0, 0, 0, $opacity); }
 
-@mixin white-color($opacity) {
-  color: rgba(255, 255, 255, $opacity);
-}
-@mixin white-bg($opacity) {
-  background-color: rgba(255, 255, 255, $opacity);
-}
+@mixin white-color($opacity) { color: rgba(255, 255, 255, $opacity); }
+@mixin white-bg($opacity) { background-color: rgba(255, 255, 255, $opacity); }
