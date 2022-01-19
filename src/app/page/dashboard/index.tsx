@@ -12,6 +12,9 @@ import StatusBar from '@comp/status-bar/index';
 import RightBar from '@comp/right-bar/index';
 import TopBar from '@comp/top-bar/index';
 import AppLoading from '@con/app-loading';
+import AppLock from '@con/app-lock';
+import moLoading from '@con/store/app-loading';
+import moLock from '@con/store/app-lock';
 
 interface IProps {}
 interface IState {}
@@ -34,9 +37,10 @@ const DBox = styled(FlexBox)(() => ({
 
 const Dashboard = (props: IProps, state: IState) => {
   const navi = useNavigate();
+  const { isLoading } = moLoading;
+  const { isLock } = moLock;
 
   useEffect(() => {
-
     return () => {};
   }, []);
 
@@ -54,7 +58,8 @@ const Dashboard = (props: IProps, state: IState) => {
 
       <StatusBar />
 
-      <AppLoading />
+      {isLoading ? <AppLoading /> : null}
+      {isLock ? <AppLock /> : null}
     </DPaper>
   );
 };

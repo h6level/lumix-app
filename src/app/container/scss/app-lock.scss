@@ -1,0 +1,8 @@
+@import '@scss/color/index.scss';
+@import '@scss/mixin.scss';
+
+.app-lock {
+  @include fixed-full;
+  @include flex-center;
+  @include black-bg(0.85);
+}

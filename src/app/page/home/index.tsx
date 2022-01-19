@@ -7,8 +7,8 @@ import { IoGlobeOutline } from 'react-icons/io5';
 
 import './scss/index.scss';
 import { FlexColumnPaper } from '@styled/index';
-import AppLock from '@con/app-lock';
 import moLock, { toggleLock } from '@con/store/app-lock';
+import { toggleLoading } from '@con/store/app-loading';
 
 interface IProps {}
 interface IState {}
@@ -21,13 +21,6 @@ const DStack = styled(Stack)(() => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-}));
-
-const LockStack = styled(Stack)(() => ({
-  flex: 1,
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
 }));
 
 const Home = (props: IProps, state: IState) => {
@@ -57,11 +50,15 @@ const Home = (props: IProps, state: IState) => {
         <p>--- 华丽的分割线 contained ---</p>
         <p>
           <Button variant="contained" color="success"
-            onClick={() => toggleLock(true)}>Lock
+            onClick={() => toggleLock(true)}>Toggle Lock
           </Button>
         </p>
         <p>--- 华丽的分割线 contained ---</p>
-        <p><Button variant="contained" color="error">Hello World</Button></p>
+        <p>
+          <Button variant="contained" color="error"
+            onClick={() => toggleLoading(true)}>Toggle Loading
+          </Button>
+        </p>
         <p>--- 华丽的分割线 contained ---</p>
         <p><Button variant="contained" color="info">Hello World</Button></p>
         <p>--- 华丽的分割线 contained ---</p>
@@ -106,16 +103,6 @@ const Home = (props: IProps, state: IState) => {
         <p><Button color="error">Hello World</Button></p>
         <p>--- 华丽的分割线 ---</p>
       </DStack>
-
-      {isLock ? (
-        <AppLock>
-          <LockStack>
-            <Button variant="contained" color="warning"
-              onClick={() => toggleLock(false)}>unLock
-            </Button>
-          </LockStack>
-        </AppLock>
-      ) : null}
     </DPaper>
   );
 };

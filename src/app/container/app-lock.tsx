@@ -1,30 +1,30 @@
 import { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
+import { Button, Stack } from '@mui/material';
 import { styled } from '@mui/system';
 
-import { blackOpacity } from '@tool/opacity';
-import { FlexPaper } from '@styled/index';
+import './scss/app-lock.scss';
+import { toggleLock } from './store/app-lock';
 
-interface IProps {
-  children: ReactNode;
-}
+interface IProps {}
 interface IState {}
 
-const DPaper = styled(FlexPaper)(() => ({
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  width: '100%',
-  height: '100%',
-  zIndex: 100,
-  backgroundColor: blackOpacity(0.9),
+const LockStack = styled(Stack)(() => ({
+  flex: 1,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 }));
 
 const AppPortal = (props: IProps, state: IState) => {
-  const { children } = props;
-
   return createPortal(
-    <DPaper>{children}</DPaper>,
+    <section className="app-lock">
+      <LockStack>
+        <Button variant="contained" color="warning"
+          onClick={() => toggleLock(false)}>unLock
+        </Button>
+      </LockStack>
+    </section>,
     document.getElementById('lock') as HTMLElement,
   );
 };
