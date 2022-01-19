@@ -58,3 +58,5 @@
 }
 
 @mixin transparent { @include black-bg(0); }
+
+@mixin z-index($value) { z-index: $value; }

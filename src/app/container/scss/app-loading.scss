@@ -4,6 +4,7 @@
 .app-loading {
   @include fixed-full;
   @include flex-center;
+  @include z-index(101);
   @include black-bg(0.85);
 
   .app-spinner {
