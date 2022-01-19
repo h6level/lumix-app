@@ -9,19 +9,19 @@ interface IState {}
 const AppPortal = (props: IProps, state: IState) => {
   return createPortal(
     <section className="app-loading">
-      <section className="lds-spinner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <section className="app-spinner">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
       </section>
     </section>,
     document.getElementById('loading') as HTMLElement,
