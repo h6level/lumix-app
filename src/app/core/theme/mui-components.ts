@@ -1,7 +1,9 @@
+import { Components } from '@mui/material';
+
 import muiButton from './mui-button';
 import Style from '@tool/style';
 
-const muiComponents = {
+const muiComponents: Components = {
   MuiButton: muiButton,
   MuiPaper: {
     styleOverrides: {

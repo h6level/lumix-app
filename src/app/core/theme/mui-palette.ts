@@ -1,9 +1,11 @@
+import { PaletteMode } from '@mui/material';
+
 import {
   pink, purple, green, red, blue, deepOrange, grey,
 } from '@mui/material/colors';
 
 const muiPalette = {
-  mode: 'light',
+  mode: <PaletteMode>'light',
   common: {
     black: grey[900],
     white: grey.A100,

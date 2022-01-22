@@ -51,6 +51,9 @@ const muiButton = {
     containedWarning: { '&:hover': { backgroundColor: deepOrange[900] } },
     containedError: { '&:hover': { backgroundColor: red[900] } },
     root: {
+      minWidth: '5rem',
+      padding: '0.6rem 1.2rem',
+
       '&.Mui-disabled': {
         color: grey[700],
         backgroundColor: grey[400],
