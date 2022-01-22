@@ -5,13 +5,13 @@ import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { Grey } from '@tool/color/index';
-import { FlexPaper } from '@styled/index';
+import { FlexCenterPaper } from '@styled/index';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(FlexPaper)(() => ({
-  height: '20px',
+const DPaper = styled(FlexCenterPaper)(({ theme }) => ({
+  height: theme.spacing(2.5),
   borderTop: `1px solid ${Grey.border}`,
 }));
 

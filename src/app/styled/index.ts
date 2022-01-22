@@ -1,9 +1,15 @@
 import {
-  APaper, FlexPaper, GridPaper, FlexColumnPaper,
-  ABox, FlexBox, GridBox, FlexColumnBox,
+  APaper, ABox,
+  FlexPaper, FlexColumnPaper, FlexCenterPaper, GridPaper,
+  FlexBox, FlexColumnBox, FlexCenterBox, GridBox,
+  InlinFlexPaper, InlineFlexColumnPaper, InlineFlexCenterPaper, InlineGridPaper,
+  InlineFlexBox, InlineFlexColumnBox, InlineFlexCenterBox, InlineGridBox,
 } from './paper';
 
 export {
-  APaper, FlexPaper, GridPaper, FlexColumnPaper,
-  ABox, FlexBox, GridBox, FlexColumnBox,
+  APaper, ABox,
+  FlexPaper, FlexColumnPaper, FlexCenterPaper, GridPaper,
+  FlexBox, FlexColumnBox, FlexCenterBox, GridBox,
+  InlinFlexPaper, InlineFlexColumnPaper, InlineFlexCenterPaper, InlineGridPaper,
+  InlineFlexBox, InlineFlexColumnBox, InlineFlexCenterBox, InlineGridBox,
 };

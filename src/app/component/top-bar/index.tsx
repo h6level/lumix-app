@@ -5,13 +5,13 @@ import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { Grey } from '@tool/color/index';
-import { FlexColumnPaper } from '@styled/index';
+import { FlexCenterPaper } from '@styled/index';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(FlexColumnPaper)(({ theme }) => ({
-  background: Grey.border,
+const DPaper = styled(FlexCenterPaper)(({ theme }) => ({
+  borderBottom: `1px solid ${Grey.border}`,
 }));
 
 const TopBar = (props: IProps, state: IState) => {
@@ -22,7 +22,7 @@ const TopBar = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DPaper></DPaper>
+    <DPaper>lumix-app</DPaper>
   );
 };
 

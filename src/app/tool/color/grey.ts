@@ -14,6 +14,7 @@ const Grey = {
   greyA400: '#BDBDBD',
   greyA700: '#616161',
   border: '#3C3836',
+  light: '#F5F5F5',
   dark: '#1D2021',
 };
 
