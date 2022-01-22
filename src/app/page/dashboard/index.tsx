@@ -13,6 +13,7 @@ import RightBar from '@comp/right-bar/index';
 import TopBar from '@comp/top-bar/index';
 import AppLoading from '@con/app-loading';
 import AppLock from '@con/app-lock';
+import AppDial from '@con/app-dial';
 import moLoading from '@con/store/app-loading';
 import moLock from '@con/store/app-lock';
 
@@ -58,6 +59,7 @@ const Dashboard = (props: IProps, state: IState) => {
 
       <StatusBar />
 
+      <AppDial />
       {isLoading ? <AppLoading /> : null}
       {isLock ? <AppLock /> : null}
     </DPaper>

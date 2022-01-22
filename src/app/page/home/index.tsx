@@ -35,22 +35,7 @@ const Home = (props: IProps, state: IState) => {
     <DPaper className="home-page">
       <DStack>
         <Typography variant="h1"
-          className="animate__animated animate__bounceIn">我愿化为一道光，穿越银河去旅行...
-        </Typography>
-        <Typography variant="h2"
           className="animate__animated animate__bounceIn">积跬步，以致千里...
-        </Typography>
-        <Typography variant="h3"
-          className="animate__animated animate__bounceIn">追求技术之巅，探索宇宙之秘...
-        </Typography>
-        <Typography variant="h4"
-          className="animate__animated animate__bounceIn">擦肩而过，受伤的不是肩膀...
-        </Typography>
-        <Typography variant="h5"
-          className="animate__animated animate__bounceIn">昨天走了，把最低温度留给了今天...
-        </Typography>
-        <Typography variant="h6"
-          className="animate__animated animate__bounceIn">曲一首，解烦忧，犹如一醉解千愁...
         </Typography>
         <p>--- 华丽的分割线 contained ---</p>
         <Link to="/">
