@@ -21,7 +21,7 @@ interface IState {}
 
 const DPaper = styled(GridPaper)(({ theme }) => ({
   flex: 1,
-  gridTemplateRows: `2px 1fr ${theme.spacing(2.5)}`,
+  gridTemplateRows: `${theme.spacing(2)} 1fr ${theme.spacing(2.5)}`,
 }));
 
 const CBox = styled(GridBox)(({ theme }) => ({

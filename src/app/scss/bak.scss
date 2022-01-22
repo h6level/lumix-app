@@ -1,0 +1,13 @@
+@import './mixin.scss';
+
+li, span, i, b, a, big, small, em, strong { @include inline-flex; }
+
+div, section, p, header, footer,
+h1, h2, h3, h4, h5, h6 {
+  @include flex;
+}
+
+ul, ol {
+  @include flex;
+  @include column;
+}

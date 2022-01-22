@@ -36,7 +36,7 @@ const Home = (props: IProps, state: IState) => {
       <DStack>
         <Typography variant="h1"
           className="animate__animated animate__bounceIn">
-          我愿化为一道光，穿越银河去旅行...
+          积跬步，以致千里...
         </Typography>
         <p>--- 华丽的分割线 contained ---</p>
         <Link to="/">
