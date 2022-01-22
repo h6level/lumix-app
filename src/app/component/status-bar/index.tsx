@@ -5,14 +5,15 @@ import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { Grey } from '@tool/color/index';
+import Style from '@tool/style';
 import { FlexCenterPaper } from '@styled/index';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(FlexCenterPaper)(({ theme }) => ({
-  height: theme.spacing(2.5),
-  borderTop: `1px solid ${Grey.border}`,
+const DPaper = styled(FlexCenterPaper)(() => ({
+  flex: 1,
+  borderTop: Style.border,
 }));
 
 const StatusBar = (props: IProps, state: IState) => {

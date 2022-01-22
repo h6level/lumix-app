@@ -5,6 +5,7 @@ import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/system';
 
 import { Grey } from '@tool/color/index';
+import Style from '@tool/style';
 import { FlexColumnPaper } from '@styled/index';
 
 interface IProps {}
@@ -12,7 +13,7 @@ interface IState {}
 
 const DPaper = styled(FlexColumnPaper)(() => ({
   flex: 1,
-  borderLeft: `1px solid ${Grey.border}`,
+  borderLeft: Style.border,
 }));
 
 const RightBar = (props: IProps, state: IState) => {

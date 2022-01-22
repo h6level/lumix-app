@@ -41,8 +41,8 @@ const InlineFlexCenterPaper = styled(InlineFlexPaper)(() => ({
 }));
 const InlineGridPaper = styled(APaper)({ display: 'inline-grid' });
 
-const InlineFlexBox = styled(ABox)(() => { display: 'inline-flex' });
-const InlineFlexColumnBox = styled(InlineFlexBox)(() => { flexDirection: 'column' });
+const InlineFlexBox = styled(ABox)(() => ({ display: 'inline-flex' }));
+const InlineFlexColumnBox = styled(InlineFlexBox)(() => ({ flexDirection: 'column' }));
 const InlineFlexCenterBox = styled(InlineFlexBox)(() => ({
   alignItems: 'center',
   justifyContent: 'center',

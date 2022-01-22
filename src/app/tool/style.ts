@@ -1,3 +1,5 @@
+import { Grey } from './color/index';
+
 const Style = {
   fontFamily: '"Open Sans", system-ui, sans-serif',
 
@@ -13,6 +15,8 @@ const Style = {
 
   lineHeight: 1.5,
   transparent: 'rgba(0, 0, 0, 0)',
+
+  border: `1px solid ${Grey.border}`,
 };
 
 export default Style;
