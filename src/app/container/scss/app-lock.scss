@@ -4,6 +4,6 @@
 .app-lock {
   @include fixed-full;
   @include flex-center;
-  @include z-index(102);
+  @include z-index(2022);
   @include black-bg(0.85);
 }
