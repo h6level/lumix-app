@@ -6,16 +6,16 @@ import { styled } from '@mui/system';
 import { IoGlobeOutline } from 'react-icons/io5';
 
 import './scss/index.scss';
-import { FlexColumnPaper } from '@styled/index';
+import { FlexPaper } from '@styled/index';
 import moLock, { toggleLock } from '@con/store/app-lock';
 import { toggleLoading } from '@con/store/app-loading';
+import AppDrawer from '@comp/app-drawer/index';
+import moDrawer from '@comp/app-drawer/store';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(FlexColumnPaper)(({ theme }) => ({
-  padding: theme.spacing(1),
-}));
+const DPaper = styled(FlexPaper)(({ theme }) => ({}));
 
 const DStack = styled(Stack)(() => ({
   display: 'flex',
@@ -26,6 +26,7 @@ const DStack = styled(Stack)(() => ({
 const Home = (props: IProps, state: IState) => {
   const navi = useNavigate();
   const { isLock } = moLock;
+  const { isDrawer } = moDrawer;
 
   useEffect(() => {
     return () => {};
@@ -33,6 +34,8 @@ const Home = (props: IProps, state: IState) => {
 
   return (
     <DPaper className="home-page">
+      {isDrawer ? <AppDrawer /> : null}
+
       <DStack>
         <Typography variant="h1"
           className="animate__animated animate__bounceIn">积跬步，以致千里...

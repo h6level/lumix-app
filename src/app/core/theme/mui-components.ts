@@ -46,18 +46,14 @@ const muiComponents: Components = {
           width: '1.8rem',
           height: '1.8rem',
         },
-        '&:hover': {
-          backgroundColor: Pink.pink100,
-        },
+        '&:hover': { backgroundColor: Pink.pink100 },
       },
     },
   },
   MuiTooltip: {
     styleOverrides: {
       popper: {
-        '.MuiTooltip-tooltip': {
-          marginRight: '1rem !important',
-        },
+        '.MuiTooltip-tooltip': { marginRight: '1rem !important' },
       },
       tooltip: {
         margin: 0,
@@ -67,6 +63,11 @@ const muiComponents: Components = {
         color: Grey.grey50,
         backgroundColor: Grey.grey700,
       },
+    },
+  },
+  MuiDrawer: {
+    styleOverrides: {
+      paper: { position: 'relative' },
     },
   },
 };

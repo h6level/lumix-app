@@ -1,23 +1,26 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { observer } from 'mobx-react';
-import { Paper, Button } from '@mui/material';
+import { Paper, IconButton } from '@mui/material';
 import { styled } from '@mui/system';
+import { MdMenu } from 'react-icons/md';
 
 import { Grey } from '@tool/color/index';
 import Style from '@tool/style';
-import { FlexPaper } from '@styled/index';
+import { FlexColumnPaper } from '@styled/index';
+import moDrawer, { toggleDrawer } from '@comp/app-drawer/store';
 
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(FlexPaper)(() => ({
+const DPaper = styled(FlexColumnPaper)(() => ({
   flex: 1,
   borderRight: Style.border,
 }));
 
 const AppBar = (props: IProps, state: IState) => {
   const navi = useNavigate();
+  const { isDrawer } = moDrawer;
 
   useEffect(() => {
     return () => {};
@@ -25,7 +28,9 @@ const AppBar = (props: IProps, state: IState) => {
 
   return (
     <DPaper>
-      <i>Hello</i>
+      <IconButton onClick={() => toggleDrawer(!isDrawer)}>
+        <MdMenu />
+      </IconButton>
     </DPaper>
   );
 };

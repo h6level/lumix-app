@@ -32,7 +32,7 @@ const CBox = styled(GridBox)(({ theme }) => ({
 }));
 
 const DBox = styled(FlexBox)(() => ({
-  flexDirection: 'column',
+  // flexDirection: 'column',
   overflow: 'auto',
 }));
 
